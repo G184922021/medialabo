@@ -1,0 +1,79 @@
+/* General styles */
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: rgb(165, 165, 165);
+}
+
+body {
+  width: 80em;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 4em;
+  background-color: teal;
+}
+
+h2 {
+  font-size: 3.2em;
+  text-align: center;
+  border: 2px solid slategray;
+  padding: 0;
+}
+h3 {
+  font-size: 2.8em;
+  
+}
+h4{
+  font-size: 2.5em;
+  color: rgb(59, 191, 252);
+  text-decoration: underline;
+}
+
+p, li {
+  font-size: 2.2em;
+}
+
+/*+++ more specific section styles +++*/
+
+/* header and footer */
+
+header, footer {
+  background-color: teal;
+  height: 10em;
+  padding: 2em;
+}
+
+h1, footer p {
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+
+/* main content */
+
+main {
+  padding: 2em;
+}
+
+main p, main li {
+  line-height: 2;
+}
+
+a:link{
+  color: aqua;
+}
+a:visited{
+  color:green;
+}
+a:hover{
+  color:blue;
+}
