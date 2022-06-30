@@ -80,5 +80,9 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-  console.log(data.list.g1[0].service.name);
-  console.log(data.list.g1[0].title);
+  let pro = data.list.g1[0].service.name;
+  let s = document.querySelector('span#pro');
+s.textContent = pro;
+  let pra = data.list.g1[0].title;
+  let d = document.querySelector('span#pra');
+d.textContent = pra;
