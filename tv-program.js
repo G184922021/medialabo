@@ -86,3 +86,14 @@ s.textContent = pro;
   let pra = data.list.g1[0].title;
   let d = document.querySelector('span#pra');
 d.textContent = pra;
+
+let b = document.querySelector('#answer');
+b.addEventListener('click', kensaku);
+
+function kensaku(){
+  let i = document.querySelector('input[name="janru"]');
+  let janru = i.value;
+  let p = document.querySelector('input[name="bangumi"]');
+  let bangumi = p.value;
+}
+
