@@ -7,7 +7,7 @@ function sendRequest() {
 	// URL を設定
 	let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
 
-	// 通信開始
+	// 通信開始 a
 	axios.get(url)
 		.then(showResult)
 		.catch(showError)
