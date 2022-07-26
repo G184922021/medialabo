@@ -15,10 +15,14 @@ function kensaku(){
   //URLを設定
 
   //ジャンル選び
-  let i = document.querySelector('input[name="janru"]');
+  let i = document.querySelectorAll('input[name="janru"]');
   let janru = i.value;
   //番組選び
   let p = document.querySelectorAll('input[name="bangumi"]');
+
+  //if (typeof data.service.name === 'string') {
+    //let chan = JSON.parse(data.service.name);
+//}
   //let bangumi;
   for(let r of p){
     if(r.checked){
@@ -52,14 +56,23 @@ function showResult(resp) {
 
   // data をコンソールに出力
   console.log(data);
+  if(bangumi === "e1"||bangumi === "g1"){
+ for(let j of i){
   if(bangumi === "e1"){
- for(let j of e1){
     let pro = data.list.e1[j].service.name;
   let s = document.querySelector('span#pro');
 s.textContent = pro;
   let pra = data.list.e1[j].title;
   let d = document.querySelector('span#pra');
 d.textContent = pra;
+}else {
+  let pro = data.list.g1[j].service.name;
+  let s = document.querySelector('span#pro');
+s.textContent = pro;
+  let pra = data.list.g1[j].title;
+  let d = document.querySelector('span#pra');
+d.textContent = pra;
+}
     }
   }
 
