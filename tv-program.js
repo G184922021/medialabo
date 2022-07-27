@@ -16,7 +16,8 @@ function kensaku(){
 
   //ジャンル選び
   let i = document.querySelectorAll('input[name="janru"]');
-  let janru = i.value;
+  let o = document.querySelector('input[name="janru"]');
+  let janru = o.value;
   //番組選び
   let p = document.querySelectorAll('input[name="bangumi"]');
 
@@ -43,23 +44,28 @@ function kensaku(){
 function showResult(resp) {
   // サーバから送られてきたデータを出力
   let data = resp.data;
-
   
+  //let i = document.querySelectorAll(data.list);
+  //console.log(i.length);
 
   // data が文字列型なら，オブジェクトに変換する
   if (typeof data === 'string') {
       data = JSON.parse(data);
   }
+   
 //if(typeof bangumi === "string"){
     //  bangumi = JSON.parse(bangumi);
 //}
 
   // data をコンソールに出力
   console.log(data);
+  
   if(bangumi === "e1"||bangumi === "g1"){
- for(let j of i){
+ for(let j = 0; j < 2; j++){
   if(bangumi === "e1"){
+    //let pro = document.querySelector("data.list.e1["+ j +"].service.name");
     let pro = data.list.e1[j].service.name;
+    console.log(pro);
   let s = document.querySelector('span#pro');
 s.textContent = pro;
   let pra = data.list.e1[j].title;
