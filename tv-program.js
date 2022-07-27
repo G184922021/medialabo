@@ -61,7 +61,7 @@ function showResult(resp) {
   console.log(data);
   
   if(bangumi === "e1"||bangumi === "g1"){
- for(let j = 0; j < 2; j++){
+ for(let j = 0; j < 5; j++){
   if(bangumi === "e1"){
     //let pro = document.querySelector("data.list.e1["+ j +"].service.name");
     let pro = data.list.e1[j].service.name;
